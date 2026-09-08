@@ -88,7 +88,7 @@ internal class ClimateWidgetStateUpdater @Inject constructor(
                                 maxTemp = displayEntity.climateControls?.maxTemperature ?: MAX_TEMP_CLIMATE_FALLBACK,
                                 stepTemp = step,
                                 stateClimate = displayEntity.rawState,
-                                hvacModesSupported = displayEntity.climateControls?.hvacSupportedModes,
+                                hvacModesSupported = displayEntity.climateControls?.hvacModes,
                             ),
                         )
                         ClimateStateWithData.from(climateEntity, displayEntity)

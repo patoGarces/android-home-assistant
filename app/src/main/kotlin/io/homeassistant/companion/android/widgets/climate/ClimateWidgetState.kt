@@ -69,7 +69,7 @@ internal data class ClimateStateWithData(
          */
         fun from(climateEntity: ClimateWidgetEntity, entity: EntityDisplay): ClimateStateWithData {
             val climateControls = entity.climateControls
-            val hvacSupportedModes = climateControls?.hvacSupportedModes?.mapNotNull { HvacMode.from(it) }
+            val hvacSupportedModes = climateControls?.hvacModes?.mapNotNull { HvacMode.from(it) }
 
             return ClimateStateWithData(
                 backgroundType = climateEntity.backgroundType,
